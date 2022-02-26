@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html >
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>WEATHER-APP</title>
+        <link rel="stylesheet" href="WEATHER-APP.css">
+    </head>
+    <body>
+        <div class="container">
+            <div class="wrapper">
+                <div class="header">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="cornflowerblue" class="bi bi-arrow-left vanished" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd" d="M15 8a.5.5 0 0 0-.5-.5H2.707l3.147-3.146a.5.5 0 1 0-.708-.708l-4 4a.5.5 0 0 0 0 .708l4 4a.5.5 0 0 0 .708-.708L2.707 8.5H14.5A.5.5 0 0 0 15 8z"/>
+                    </svg>
+                    <h2 class="app_title">Weather App</h2>
+                </div>
+                <div class="input_container ">
+                    <input class="city_input" placeholder="Enter city name"/>
+                    <div class="container_or">
+                        <span class="barra"></span>
+                        <h4 class="text_or">Or</h4>
+                        <span class="barra"></span>
+                    </div>
+                    <button class="btn_location">Get Device Location</button>
+                    <p class="message_text vanished"></p>
+                </div>
+                <div class="container_weather hide">
+                    <img class="weather_icon" src="./assets/clear.svg" alt="weather_icon">
+                    <h2 class="temperature_text"></h2>
+                    <p class="weather_text"></p>
+                    <div class="location_container">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-geo-alt-fill" viewBox="0 0 16 16">
+                            <path d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10zm0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6z"/>
+                        </svg>
+                        <p class="city_country_text"></p>
+                    </div>
+                </div>
+                <div class="container_weather_details hide">
+                    <div class="container_feels_like">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-thermometer-half" viewBox="0 0 16 16">
+                            <path d="M9.5 12.5a1.5 1.5 0 1 1-2-1.415V6.5a.5.5 0 0 1 1 0v4.585a1.5 1.5 0 0 1 1 1.415z"/>
+                            <path d="M5.5 2.5a2.5 2.5 0 0 1 5 0v7.55a3.5 3.5 0 1 1-5 0V2.5zM8 1a1.5 1.5 0 0 0-1.5 1.5v7.987l-.167.15a2.5 2.5 0 1 0 3.333 0l-.166-.15V2.5A1.5 1.5 0 0 0 8 1z"/>
+                        </svg>
+                        <p class="feels_like_temperature"></p>
+                    </div>
+                    <div class="container_humidity">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-droplet-fill" viewBox="0 0 16 16">
+                            <path d="M8 16a6 6 0 0 0 6-6c0-1.655-1.122-2.904-2.432-4.362C10.254 4.176 8.75 2.503 8 0c0 0-6 5.686-6 10a6 6 0 0 0 6 6ZM6.646 4.646l.708.708c-.29.29-1.128 1.311-1.907 2.87l-.894-.448c.82-1.641 1.717-2.753 2.093-3.13Z"/>
+                        </svg>
+                        <p class="humidity_text"></p>
+                    </div>
+                </div>
+                <div class="loading hide"></div>
+            </div>
+        </div>
+    </body>
+    <script src="WEATHER-APP.js"></script>
+</html>
